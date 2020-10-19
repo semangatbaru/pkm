@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#749d0d"
+    tools:context=".X">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:background="#749d0d"
+        android:layout_height="70dp">
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/bagroundputih"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:background="@drawable/logo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"></androidx.appcompat.widget.AppCompatImageView>
+
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_marginTop="20dp"
+            android:background="@drawable/gambar"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"></androidx.appcompat.widget.AppCompatImageView>
+
+
+        <RelativeLayout
+
+            android:background="@drawable/bagroundabuabu"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="300dp">
+
+            <AutoCompleteTextView
+                android:textColor="#fff"
+                android:paddingLeft="20dp"
+                android:layout_marginStart="130dp"
+                android:layout_marginTop="10dp"
+                android:background="#005380"
+                android:text="Layanan"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                tools:ignore="RtlCompat"></AutoCompleteTextView>
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="80dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/sewa"
+                tools:ignore="RtlCompat"></androidx.appcompat.widget.AppCompatImageButton>
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="180dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/kritik"
+                tools:ignore="RtlCompat"></androidx.appcompat.widget.AppCompatImageButton>
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:layout_marginStart="220dp"
+                android:layout_marginTop="80dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/chat"
+                tools:ignore="RtlCompat"></androidx.appcompat.widget.AppCompatImageButton>
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:layout_marginStart="220dp"
+                android:layout_marginTop="180dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/maps"
+                tools:ignore="RtlCompat"></androidx.appcompat.widget.AppCompatImageButton>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
