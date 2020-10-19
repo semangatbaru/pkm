@@ -7,36 +7,35 @@
     android:layout_height="match_parent"
     tools:context=".Kritik">
 
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:background="#749d0d"
-        android:layout_height="50dp">
+  <AutoCompleteTextView
+      android:textColor="#ffff"
+      android:drawablePadding="40dp"
+      android:paddingLeft="10dp"
+      android:drawableStart="@drawable/backputih"
+      android:text="MITRA : UPJA TANI MAKMUR"
+      android:background="@drawable/bagroundbiru"
+      android:layout_width="match_parent"
+      android:layout_height="40dp"
+      tools:ignore="RtlCompat"></AutoCompleteTextView>
 
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#ffff"
-        >
+  <AutoCompleteTextView
+      android:layout_marginStart="50dp"
+      android:layout_marginTop="30dp"
+      android:paddingLeft="10dp"
+      android:text="Fitur yang dimliki aolikasi ini sangat menarik"
+      android:background="@drawable/bagroundkotaabuabu"
+      android:layout_width="350dp"
+      android:layout_height="50dp"
+      tools:ignore="RtlCompat"></AutoCompleteTextView>
 
-        <androidx.appcompat.widget.AppCompatCheckedTextView
-            android:paddingLeft="9dp"
-            android:drawablePadding="90dp"
-            android:gravity="center"
-            android:text="MITRA : UPJA TANI AKMUR"
-            android:drawableStart="@drawable/backputih"
-            android:background="@drawable/bagroundbiru"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            tools:ignore="RtlCompat">
-        </androidx.appcompat.widget.AppCompatCheckedTextView>
-
-        <AutoCompleteTextView
-            
-            android:layout_width="match_parent"
-            android:layout_height="40dp"></AutoCompleteTextView>
-
-    </LinearLayout>
+  <AutoCompleteTextView
+      android:layout_marginStart="330dp"
+      android:layout_marginTop="-20dp"
+      android:paddingLeft="10dp"
+      android:text="09:24"
+      android:background="@drawable/bagroundkotaabuabu"
+      android:layout_width="60dp"
+      android:layout_height="19dp"
+      tools:ignore="RtlCompat"></AutoCompleteTextView>
 
 </LinearLayout>
