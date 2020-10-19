@@ -9,9 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Seani">
+        <activity android:name=".Kritik"></activity>
         <activity
             android:name=".Beranda"
-            android:label="@string/title_activity_beranda"></activity>
+            android:label="@string/title_activity_beranda" />
         <activity android:name=".X" />
         <activity android:name=".MainActivity">
             <intent-filter>

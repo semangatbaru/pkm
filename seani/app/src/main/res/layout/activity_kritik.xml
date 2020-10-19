@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Kritik">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:background="#749d0d"
+        android:layout_height="50dp">
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffff"
+        >
+
+        <androidx.appcompat.widget.AppCompatCheckedTextView
+            android:paddingLeft="9dp"
+            android:drawablePadding="90dp"
+            android:gravity="center"
+            android:text="MITRA : UPJA TANI AKMUR"
+            android:drawableStart="@drawable/backputih"
+            android:background="@drawable/bagroundbiru"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            tools:ignore="RtlCompat">
+        </androidx.appcompat.widget.AppCompatCheckedTextView>
+
+        <AutoCompleteTextView
+            
+            android:layout_width="match_parent"
+            android:layout_height="40dp"></AutoCompleteTextView>
+
+    </LinearLayout>
+
+</LinearLayout>
