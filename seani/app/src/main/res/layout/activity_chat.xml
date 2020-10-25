@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Chat">
+
+    <AutoCompleteTextView
+        android:textColor="#ffff"
+        android:drawablePadding="40dp"
+        android:paddingLeft="10dp"
+        android:drawableStart="@drawable/backputih"
+        android:text="MITRA : UPJA TANI MAKMUR"
+        android:background="@drawable/bagroundbiru"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        tools:ignore="RtlCompat"></AutoCompleteTextView>
+
+    <AutoCompleteTextView
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="10dp"
+        android:text="Fitur yang dimliki aolikasi ini sangat menarik"
+        android:background="@drawable/bagroundabuabu"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        tools:ignore="RtlCompat"></AutoCompleteTextView>
+
+    <AutoCompleteTextView
+        android:layout_marginStart="330dp"
+        android:layout_marginTop="-20dp"
+        android:paddingLeft="10dp"
+        android:text="09:24"
+        android:background="@drawable/bagroundkotaabuabu"
+        android:layout_width="60dp"
+        android:layout_height="19dp"
+        tools:ignore="RtlCompat"></AutoCompleteTextView>
+
+</LinearLayout>
+
+
