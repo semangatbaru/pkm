@@ -41,9 +41,10 @@
             android:paddingLeft="20dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.508"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.076" />
+            app:layout_constraintVertical_bias="0.100" />
 
         <EditText
             android:id="@+id/alamatRegister"
@@ -57,8 +58,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.176" />
-
+            app:layout_constraintVertical_bias="0.240" />
 
         <EditText
             android:id="@+id/notlpRegister"
@@ -70,10 +70,9 @@
             android:paddingLeft="20dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.487"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.267" />
+            app:layout_constraintVertical_bias="0.380" />
 
         <EditText
             android:id="@+id/emailRegister"
@@ -87,21 +86,22 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.423" />
+            app:layout_constraintVertical_bias="0.520" />
 
         <ImageButton
             android:id="@+id/imageButton2"
             android:layout_width="131dp"
             android:layout_height="41dp"
-            android:layout_marginEnd="40dp"
-            android:layout_marginRight="40dp"
             android:background="@drawable/bagroundlogin"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.840"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.672" />
+            app:layout_constraintVertical_bias="0.750" />
 
         <TextView
+            android:id="@+id/textView2"
             android:layout_width="42dp"
             android:layout_height="17dp"
             android:text="SAVE"
@@ -117,17 +117,16 @@
             android:id="@+id/imageButton1"
             android:layout_width="131dp"
             android:layout_height="41dp"
-            android:layout_marginEnd="84dp"
-            android:layout_marginRight="84dp"
             android:background="@drawable/bagroundlogin"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/imageButton2"
-            app:layout_constraintHorizontal_bias="0.891"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.200"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.672" />
+            app:layout_constraintVertical_bias="0.750" />
 
         <TextView
+            android:id="@+id/textView3"
             android:layout_width="50dp"
             android:layout_height="20dp"
             android:text="BATAL"
