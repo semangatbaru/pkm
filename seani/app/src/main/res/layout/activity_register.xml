@@ -1,78 +1,149 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#749d0d">
 
     <ImageView
+        android:id="@+id/imageprofil"
         android:layout_width="98dp"
         android:layout_height="94dp"
+        android:layout_marginTop="28dp"
         android:src="@drawable/bulat"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="156dp"
-        tools:layout_editor_absoluteY="77dp" />
-
-
-
-    <EditText
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:drawablePadding="20dp"
-        android:text="Nama"
-        android:background="@drawable/bagroundabumuda"
-        android:textColor="#000000"
-        android:textSize="18dp"
-        android:textStyle="bold"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="41dp"
-        tools:layout_editor_absoluteY="247dp" />
-
-
-
-    <EditText
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:drawablePadding="20dp"
-        android:text="                @gmail.com"
-        android:textColor="#000000"
-        android:textSize="18dp"
-        android:textStyle="bold"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="41dp"
-        tools:layout_editor_absoluteY="335dp" />
-
-
-
-    <EditText
-        android:layout_width="200"
-        android:layout_height="wrap_content"
-        android:drawablePadding="20dp"
-        android:text="Alamat"
-        android:textColor="#000000"
-        android:textSize="18dp"
-        android:textStyle="bold"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="41dp"
-        tools:layout_editor_absoluteY="400dp" />
-
-    <ImageButton
-        android:layout_width="323dp"
-        android:layout_height="46dp"
-        android:background="@drawable/bagroundabumuda"
-        tools:layout_editor_absoluteX="44dp"
-        tools:layout_editor_absoluteY="519dp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="REGISTER"
-        android:textColor="#749d0d"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="160dp"
-        tools:layout_editor_absoluteY="528dp"
-        tools:ignore="MissingConstraints" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:background="@drawable/bagroundputihawal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-32dp">
+
+
+        <EditText
+            android:id="@+id/namaRegister"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:background="@android:drawable/editbox_background"
+            android:hint="Nama"
+            android:inputType="text"
+            android:paddingLeft="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.076" />
+
+        <EditText
+            android:id="@+id/alamatRegister"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:background="@android:drawable/editbox_background"
+            android:hint="Alamat"
+            android:inputType="text"
+            android:paddingLeft="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.176" />
+
+
+        <EditText
+            android:id="@+id/notlpRegister"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:background="@android:drawable/editbox_background"
+            android:hint="No Telfon"
+            android:inputType="text"
+            android:paddingLeft="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.487"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.267" />
+
+        <EditText
+            android:id="@+id/emailRegister"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:background="@android:drawable/editbox_background"
+            android:hint="Email"
+            android:inputType="text"
+            android:paddingLeft="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.423" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="131dp"
+            android:layout_height="41dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/bagroundlogin"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.672" />
+
+        <TextView
+            android:layout_width="42dp"
+            android:layout_height="17dp"
+            android:text="SAVE"
+            android:textColor="#ffffff"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/imageButton2"
+            app:layout_constraintEnd_toEndOf="@+id/imageButton2"
+            app:layout_constraintStart_toStartOf="@+id/imageButton2"
+            app:layout_constraintTop_toTopOf="@+id/imageButton2" />
+
+        <ImageButton
+            android:id="@+id/imageButton1"
+            android:layout_width="131dp"
+            android:layout_height="41dp"
+            android:layout_marginEnd="84dp"
+            android:layout_marginRight="84dp"
+            android:background="@drawable/bagroundlogin"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageButton2"
+            app:layout_constraintHorizontal_bias="0.891"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.672" />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:text="BATAL"
+            android:textColor="#ffffff"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/imageButton1"
+            app:layout_constraintEnd_toEndOf="@+id/imageButton1"
+            app:layout_constraintStart_toStartOf="@+id/imageButton1"
+            app:layout_constraintTop_toTopOf="@+id/imageButton1" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+

@@ -22,17 +22,22 @@
         android:layout_width="match_parent"
         android:layout_height="350dp"
         android:background="@drawable/bagroundputihawal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="386dp">
+        tools:layout_editor_absoluteX="16dp">
 
 
         <ImageButton
+            android:id="@+id/imageButton"
             android:layout_width="266dp"
             android:layout_height="45dp"
             android:background="@drawable/bagroundlogin"
-            tools:layout_editor_absoluteX="72dp"
-            tools:layout_editor_absoluteY="126dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -41,8 +46,9 @@
             android:textColor="#ffffff"
             android:textSize="20dp"
             android:textStyle="bold"
-            tools:layout_editor_absoluteX="176dp"
-            tools:layout_editor_absoluteY="136dp" />
+            app:layout_constraintBottom_toBottomOf="@+id/imageButton"
+            app:layout_constraintEnd_toEndOf="@+id/imageButton"
+            app:layout_constraintStart_toStartOf="@+id/imageButton"
+            app:layout_constraintTop_toTopOf="@+id/imageButton" />
     </androidx.constraintlayout.widget.ConstraintLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>
