@@ -14,7 +14,7 @@
         <activity
             android:name="com.staydev.seani.Beranda"
             android:label="@string/title_activity_beranda" />
-        <activity android:name="com.staydev.seani.X" />
+        <activity android:name="com.staydev.seani.RegisterActivity" />
         <activity android:name="com.staydev.seani.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -8,10 +8,10 @@
     android:background="#749d0d">
 
     <ImageView
-        android:id="@+id/imageProfil"
+        android:id="@+id/imageRegister"
         android:layout_width="98dp"
         android:layout_height="94dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="28dp"
         android:src="@drawable/bulat"
         app:layout_constraintBottom_toTopOf="@+id/constraintLayout3"
         app:layout_constraintEnd_toEndOf="parent"
@@ -32,12 +32,12 @@
 
 
         <EditText
-            android:id="@+id/namaRegister"
+            android:id="@+id/emailRegister"
             android:layout_width="350dp"
             android:layout_height="50dp"
             android:background="@android:drawable/editbox_background"
-            android:hint="Nama"
-            android:inputType="text"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
             android:paddingLeft="20dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -47,11 +47,11 @@
             app:layout_constraintVertical_bias="0.100" />
 
         <EditText
-            android:id="@+id/alamatRegister"
+            android:id="@+id/namaRegister"
             android:layout_width="350dp"
             android:layout_height="50dp"
             android:background="@android:drawable/editbox_background"
-            android:hint="Alamat"
+            android:hint="@string/nama"
             android:inputType="text"
             android:paddingLeft="20dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -65,8 +65,8 @@
             android:layout_width="350dp"
             android:layout_height="50dp"
             android:background="@android:drawable/editbox_background"
-            android:hint="No Telfon"
-            android:inputType="text"
+            android:hint="@string/no_telfon"
+            android:inputType="number"
             android:paddingLeft="20dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -75,11 +75,11 @@
             app:layout_constraintVertical_bias="0.380" />
 
         <EditText
-            android:id="@+id/emailRegister"
+            android:id="@+id/alamatRegister"
             android:layout_width="350dp"
             android:layout_height="50dp"
             android:background="@android:drawable/editbox_background"
-            android:hint="Email"
+            android:hint="@string/alamat"
             android:inputType="text"
             android:paddingLeft="20dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -95,17 +95,17 @@
             android:background="@drawable/bagroundlogin"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.820"
+            app:layout_constraintHorizontal_bias="0.840"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.750" />
 
         <TextView
-            android:id="@+id/btnSave"
+            android:id="@+id/textView2"
             android:layout_width="42dp"
             android:layout_height="17dp"
-            android:text="SAVE"
-            android:textColor="#ffffff"
+            android:text="@string/save"
+            android:textColor="@color/white"
             android:textSize="16dp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="@+id/imageButton2"
@@ -125,13 +125,12 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.750" />
 
-
         <TextView
-            android:id="@+id/btnbatan"
+            android:id="@+id/textView3"
             android:layout_width="50dp"
             android:layout_height="20dp"
-            android:text="BATAL"
-            android:textColor="#ffffff"
+            android:text="@string/batal"
+            android:textColor="@color/white"
             android:textSize="16dp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="@+id/imageButton1"
