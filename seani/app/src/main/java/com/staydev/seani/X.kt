@@ -1,11 +1,11 @@
-package com.staydev.file
+package com.staydev.seani
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class Kritik : AppCompatActivity() {
+class X : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_kritik)
+        setContentView(R.layout.activity_x)
     }
 }

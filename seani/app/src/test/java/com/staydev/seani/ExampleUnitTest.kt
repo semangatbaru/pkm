@@ -1,4 +1,4 @@
-package com.staydev.file
+package com.staydev.seani
 
 import org.junit.Test
 

@@ -1,4 +1,4 @@
-package com.staydev.file.ui.home
+package com.staydev.seani.ui.home
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

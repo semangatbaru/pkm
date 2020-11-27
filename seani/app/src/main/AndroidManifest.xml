@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.staydev.file">
+    package="com.staydev.seani">
 
     <application
         android:allowBackup="true"
@@ -9,13 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Seani">
-        <activity android:name=".Chat"></activity>
-        <activity android:name=".Kritik" />
+        <activity android:name="com.staydev.seani.Chat"></activity>
+        <activity android:name="com.staydev.seani.Kritik" />
         <activity
-            android:name=".Beranda"
+            android:name="com.staydev.seani.Beranda"
             android:label="@string/title_activity_beranda" />
-        <activity android:name=".X" />
-        <activity android:name=".MainActivity">
+        <activity android:name="com.staydev.seani.X" />
+        <activity android:name="com.staydev.seani.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

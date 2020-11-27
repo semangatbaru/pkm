@@ -1,4 +1,4 @@
-package com.staydev.file
+package com.staydev.seani
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

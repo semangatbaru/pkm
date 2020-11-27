@@ -1,4 +1,4 @@
-package com.staydev.file
+package com.staydev.seani
 
 import android.os.Bundle
 import com.google.android.material.bottomnavigation.BottomNavigationView
