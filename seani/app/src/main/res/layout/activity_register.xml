@@ -8,10 +8,10 @@
     android:background="#749d0d">
 
     <ImageView
-        android:id="@+id/imageprofil"
+        android:id="@+id/imageProfil"
         android:layout_width="98dp"
         android:layout_height="94dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="20dp"
         android:src="@drawable/bulat"
         app:layout_constraintBottom_toTopOf="@+id/constraintLayout3"
         app:layout_constraintEnd_toEndOf="parent"
@@ -95,13 +95,13 @@
             android:background="@drawable/bagroundlogin"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.840"
+            app:layout_constraintHorizontal_bias="0.820"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.750" />
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/btnSave"
             android:layout_width="42dp"
             android:layout_height="17dp"
             android:text="SAVE"
@@ -125,8 +125,9 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.750" />
 
+
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/btnbatan"
             android:layout_width="50dp"
             android:layout_height="20dp"
             android:text="BATAL"
