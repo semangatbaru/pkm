@@ -9,13 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Seani">
-        <activity android:name="com.staydev.seani.Chat"></activity>
-        <activity android:name="com.staydev.seani.Kritik" />
+        <activity android:name=".activity_tambah_alat"></activity>
+        <activity android:name=".Chat" />
+        <activity android:name=".Kritik" />
         <activity
-            android:name="com.staydev.seani.Beranda"
+            android:name=".Beranda"
             android:label="@string/title_activity_beranda" />
-        <activity android:name="com.staydev.seani.RegisterActivity" />
-        <activity android:name="com.staydev.seani.MainActivity">
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
