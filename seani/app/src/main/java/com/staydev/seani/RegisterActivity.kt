@@ -64,6 +64,9 @@ class RegisterActivity : AppCompatActivity() {
         mRegister.setOnClickListener {
             regis()
         }
+        mBatal.setOnClickListener {
+            onBackPressed()
+        }
 
         getData()
 
@@ -161,7 +164,7 @@ class RegisterActivity : AppCompatActivity() {
                         //starting the MainActivity
 
                         finish()
-                        startActivity(Intent(applicationContext, Kritik::class.java))
+                        startActivity(Intent(applicationContext, Beranda::class.java))
                         Toast.makeText(applicationContext,obj.getString("message"),Toast.LENGTH_SHORT).show()
 
                     } else {

@@ -20,6 +20,7 @@
 
 
         <ImageButton
+            android:id="@+id/inFoto"
             android:layout_width="130dp"
             android:layout_height="150dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -47,10 +48,11 @@
 
 
             <EditText
-                android:id="@+id/editText3"
+                android:id="@+id/inAlat"
                 android:layout_width="330dp"
                 android:layout_height="40dp"
                 android:hint="@string/nama"
+                android:inputType="text"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -61,10 +63,11 @@
             </EditText>
 
             <EditText
-                android:id="@+id/editText2"
+                android:id="@+id/inStok"
                 android:layout_width="330dp"
                 android:layout_height="40dp"
                 android:hint="@string/stok"
+                android:inputType="number"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -75,10 +78,11 @@
             </EditText>
 
             <EditText
-                android:id="@+id/editText"
+                android:id="@+id/inHarga"
                 android:layout_width="330dp"
                 android:layout_height="40dp"
                 android:hint="@string/harga"
+                android:inputType="number"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -88,8 +92,9 @@
 
             </EditText>
 
-            <TextView
-                android:id="@+id/textView4"
+            <EditText
+                android:id="@+id/inDeskripsi"
+                android:inputType="text"
                 android:layout_width="330dp"
                 android:layout_height="130dp"
                 android:background="@drawable/bagroundkotakputih1"
@@ -105,7 +110,7 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <ImageButton
-            android:id="@+id/imageButton1"
+            android:id="@+id/btnBatalAlat"
             android:layout_width="131dp"
             android:layout_height="41dp"
             android:background="@drawable/bagroundlogin"
@@ -124,13 +129,13 @@
             android:textColor="@color/white"
             android:textSize="16dp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="@+id/imageButton1"
-            app:layout_constraintEnd_toEndOf="@+id/imageButton1"
-            app:layout_constraintStart_toStartOf="@+id/imageButton1"
-            app:layout_constraintTop_toTopOf="@+id/imageButton1" />
+            app:layout_constraintBottom_toBottomOf="@+id/btnBatalAlat"
+            app:layout_constraintEnd_toEndOf="@+id/btnBatalAlat"
+            app:layout_constraintStart_toStartOf="@+id/btnBatalAlat"
+            app:layout_constraintTop_toTopOf="@+id/btnBatalAlat" />
 
         <ImageButton
-            android:id="@+id/imageButton2"
+            android:id="@+id/btnSaveAlat"
             android:layout_width="131dp"
             android:layout_height="41dp"
             android:background="@drawable/bagroundlogin"
@@ -149,10 +154,10 @@
             android:textColor="@color/white"
             android:textSize="16dp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="@+id/imageButton2"
-            app:layout_constraintEnd_toEndOf="@+id/imageButton2"
-            app:layout_constraintStart_toStartOf="@+id/imageButton2"
-            app:layout_constraintTop_toTopOf="@+id/imageButton2" />
+            app:layout_constraintBottom_toBottomOf="@+id/btnSaveAlat"
+            app:layout_constraintEnd_toEndOf="@+id/btnSaveAlat"
+            app:layout_constraintStart_toStartOf="@+id/btnSaveAlat"
+            app:layout_constraintTop_toTopOf="@+id/btnSaveAlat" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

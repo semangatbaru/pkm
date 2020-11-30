@@ -26,7 +26,7 @@ class LoginActivity : AppCompatActivity() {
 
         if (SharedPrefManager.getInstance(this).isLoggedIn) {
             finish()
-            startActivity(Intent(this, Kritik::class.java))
+            startActivity(Intent(this, Beranda::class.java))
         }
 
         val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
