@@ -14,4 +14,12 @@
     <string name="harga">Harga</string>
     <string name="deskripsi">Deskripsi</string>
     <string name="alat">Alat</string>
+    <string name="editnama">editnama</string>
+    <string name="editstok">Editstok</string>
+    <string name="editharga">Editharga</string>
+    <string name="editdeskripsi">Editdeskripsi</string>
+    <string name="sewa">SEWA</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="layanan">LAYANAN</string>
 </resources>

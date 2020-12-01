@@ -15,7 +15,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="29dp">
+        tools:layout_editor_absoluteX="-107dp">
 
 
         <ImageView
@@ -45,20 +45,21 @@
         </ImageView>
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="360dp"
-            android:layout_height="260dp"
+            android:id="@+id/constraintLayout6"
+            android:layout_width="340dp"
+            android:layout_height="230dp"
             android:background="@drawable/bagroundabuabu"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.420"
+            app:layout_constraintHorizontal_bias="0.490"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.870">
+            app:layout_constraintVertical_bias="0.850">
 
 
             <ImageButton
-                android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
                 android:background="@drawable/sewa"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -71,8 +72,8 @@
 
             <ImageButton
                 android:id="@+id/imageButton4"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
                 android:background="@drawable/chat"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -85,8 +86,8 @@
 
             <ImageButton
                 android:id="@+id/imageButton3"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
                 android:background="@drawable/kritik"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -99,8 +100,8 @@
 
             <ImageButton
                 android:id="@+id/imageButton5"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
                 android:background="@drawable/maps"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -113,6 +114,24 @@
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bagroundbiru"
+            android:gravity="center"
+            android:text="@string/layanan"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.508"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.550">
+
+        </TextView>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

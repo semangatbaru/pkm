@@ -16,7 +16,9 @@
         android:background="@drawable/bagroundbiru"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        tools:ignore="RtlCompat"></AutoCompleteTextView>
+        tools:ignore="RtlCompat">
+
+    </AutoCompleteTextView>
 
     <AutoCompleteTextView
         android:layout_marginStart="50dp"
@@ -26,7 +28,9 @@
         android:background="@drawable/bagroundabuabu"
         android:layout_width="350dp"
         android:layout_height="50dp"
-        tools:ignore="RtlCompat"></AutoCompleteTextView>
+        tools:ignore="RtlCompat">
+
+    </AutoCompleteTextView>
 
     <AutoCompleteTextView
         android:layout_marginStart="330dp"
