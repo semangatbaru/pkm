@@ -1,5 +1,4 @@
 package com.staydev.seani
-
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -7,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.android.volley.AuthFailureError
@@ -19,6 +19,7 @@ import com.staydev.seani.helper.VolleySingleton
 import com.staydev.seani.model.Malat
 import org.json.JSONException
 import org.json.JSONObject
+
 
 class SewaFragment : Fragment() {
     private lateinit var root:View
@@ -38,7 +39,7 @@ class SewaFragment : Fragment() {
         Toast.makeText(context, "oke", Toast.LENGTH_LONG).show()
         mRecyclerView = root.findViewById(R.id.RecyclerSewa)
         mRecyclerView.setHasFixedSize(true)
-        mRecyclerView.layoutManager = LinearLayoutManager(activity)
+        mRecyclerView.layoutManager = GridLayoutManager(activity, 2)
 
         getAlat()
         return root
@@ -67,7 +68,7 @@ class SewaFragment : Fragment() {
                             Log.i("data", obj.getString("data"));
                             val dataJson = obj.getJSONArray("data")
 
-                            for (i in 0 until dataJson.length()){
+                            for (i in 0 until dataJson.length()) {
                                 val data = dataJson.getJSONObject(i)
                                 list.add(
                                         Malat(
@@ -80,7 +81,7 @@ class SewaFragment : Fragment() {
                                         )
                                 )
                             }
-                            mRecyclerView.adapter= AdapterAlat(list,requireContext())
+                            mRecyclerView.adapter = AdapterAlat(list, requireContext())
 
                         } else {
                             Toast.makeText(activity, obj.getString("message"), Toast.LENGTH_SHORT)
