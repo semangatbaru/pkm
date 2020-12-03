@@ -2,8 +2,8 @@
     <string name="app_name">seani</string>
     <string name="title_activity_beranda">MainActivity</string>
     <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_dashboard">Sewa</string>
+    <string name="title_notifications">Sewa</string>
     <string name="nama">Nama</string>
     <string name="email">Email</string>
     <string name="no_telfon">No Telfon</string>
@@ -22,4 +22,6 @@
     <string name="ok">OK</string>
     <string name="cancel">Cancel</string>
     <string name="layanan">LAYANAN</string>
+    <string name="title_sewa">Sewa</string>
+    <string name="combinne_ukuran_besar">COMBINNE Ukuran Besar</string>
 </resources>

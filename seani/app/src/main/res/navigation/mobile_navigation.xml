@@ -7,15 +7,15 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.staydev.seani.ui.home.HomeFragment"
+        android:name="com.staydev.seani.HomeFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/navigation_dashboard"
-        android:name="com.staydev.seani.Coba"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/activity_register" />
+        android:name="com.staydev.seani.SewaFragment"
+        android:label="@string/sewa"
+        tools:layout="@layout/fragment_sewa" />
 
     <fragment
         android:id="@+id/navigation_notifications"

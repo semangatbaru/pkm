@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#749d0d"
-    tools:context=".activity_tambah_alat">
+    android:background="#749d0d">
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
