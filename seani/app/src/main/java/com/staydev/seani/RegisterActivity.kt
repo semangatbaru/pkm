@@ -52,7 +52,7 @@ class RegisterActivity : AppCompatActivity() {
         setContentView(R.layout.activity_register)
 
         mEmail = findViewById(R.id.emailRegister)
-        mEmail.isEnabled = false;
+        //mEmail.isEnabled = false;
         mNama = findViewById(R.id.namaRegister)
         mAlamat = findViewById(R.id.alamatRegister)
         mNoHp = findViewById(R.id.notlpRegister)
@@ -103,7 +103,7 @@ class RegisterActivity : AppCompatActivity() {
     private fun regis() {
         //first getting the values
 
-        base()
+        //base()
         val nama = mNama.text.toString()
         val email = mEmail.text.toString()
         val alamat = mAlamat.text.toString()
