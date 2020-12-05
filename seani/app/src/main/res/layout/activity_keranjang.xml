@@ -20,7 +20,7 @@
             android:id="@+id/RecyclerSewa"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            tools:listitem="@layout/list_sewa"
+            tools:listitem="@layout/activity_list_keranjang"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias=""

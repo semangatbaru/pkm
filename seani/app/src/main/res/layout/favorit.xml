@@ -10,7 +10,7 @@
     <TextView
         android:layout_width="350dp"
         android:layout_height="30dp"
-        android:background="@drawable/backgroundsearch"
+        android:background="@drawable/bagroundsearch"
         tools:layout_editor_absoluteX="30dp"
         tools:layout_editor_absoluteY="16dp"
         tools:ignore="MissingConstraints" />
