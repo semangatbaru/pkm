@@ -18,10 +18,15 @@
     <string name="editstok">Editstok</string>
     <string name="editharga">Editharga</string>
     <string name="editdeskripsi">Editdeskripsi</string>
-    <string name="sewa">SEWA</string>
     <string name="ok">OK</string>
     <string name="cancel">Cancel</string>
     <string name="layanan">LAYANAN</string>
     <string name="title_sewa">Sewa</string>
     <string name="combinne_ukuran_besar">COMBINNE Ukuran Besar</string>
+    <string name="akun">Akun</string>
+    <string name="des">Traktor adalah kendaraan yang didesain secara spesifik untuk keperluan traksi tinggi</string>
+    <string name="checkout">CheckOut</string>
+    <string name="proses">Proses</string>
+    <string name="info">Info</string>
+    <string name="keranjang">Keranjang</string>
 </resources>

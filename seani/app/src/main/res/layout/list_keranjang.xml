@@ -46,7 +46,7 @@
 
 
         <ImageView
-            android:id="@+id/tombol_hapus_item"
+            android:id="@+id/apaini"
             android:layout_width="25dp"
             android:layout_height="25dp"
             android:layout_gravity="right|center_vertical"

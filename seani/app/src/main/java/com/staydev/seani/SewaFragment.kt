@@ -1,10 +1,13 @@
 package com.staydev.seani
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.Toast
+import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -25,6 +28,7 @@ class SewaFragment : Fragment() {
     private lateinit var root:View
     private lateinit var mRecyclerView: RecyclerView
     private lateinit var list:ArrayList<Malat>
+    private lateinit var mButtonProses:Button
 
     override fun onCreateView(
             inflater: LayoutInflater,
@@ -32,6 +36,13 @@ class SewaFragment : Fragment() {
             savedInstanceState: Bundle?
     ): View? {
         root = inflater.inflate(R.layout.fragment_sewa, container, false)
+
+        mButtonProses = root.findViewById(R.id.btnProses)
+//        mButtonProses.isVisible  = false
+        mButtonProses.setOnClickListener {
+            startActivity(Intent(context, KeranjangActivity::class.java))
+        }
+
 
         list = ArrayList()
 

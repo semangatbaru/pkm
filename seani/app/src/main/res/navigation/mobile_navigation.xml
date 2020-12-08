@@ -14,12 +14,12 @@
     <fragment
         android:id="@+id/navigation_dashboard"
         android:name="com.staydev.seani.SewaFragment"
-        android:label="@string/sewa"
+        android:label="@string/title_sewa"
         tools:layout="@layout/fragment_sewa" />
 
     <fragment
         android:id="@+id/navigation_notifications"
-        android:name="com.staydev.seani.AlatFragment"
-        android:label="@string/alat"
+        android:name="com.staydev.seani.AkunFragment"
+        android:label="@string/info"
         tools:layout="@layout/activity_tambah_alat" />
 </navigation>

@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
@@ -18,15 +19,20 @@ class LoginActivity : AppCompatActivity() {
     private lateinit var bLogin:ImageView
     var RC_SIGN_IN = 0
     private lateinit var mGoogleSignInClient: GoogleSignInClient
+    private lateinit var toolbar: Toolbar
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_awal)
 
+//        toolbar = findViewById(R.id.okeoke);
+//        setSupportActionBar(toolbar);
+//        toolbar.title = "Login";
+
         if (SharedPrefManager.getInstance(this).isLoggedIn) {
             finish()
-            startActivity(Intent(this, Beranda::class.java))
+            startActivity(Intent(this, BerandaActivity::class.java))
         }
 
         val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
@@ -42,10 +48,10 @@ class LoginActivity : AppCompatActivity() {
 
         bLogin.setOnClickListener {
             //Toast.makeText(this, "ok", Toast.LENGTH_SHORT).show()
-            //signIn()
-            val intent = Intent(this@LoginActivity, RegisterActivity::class.java)
-            startActivity(intent)
-            finish()
+            signIn()
+//            val intent = Intent(this@LoginActivity, RegisterActivity::class.java)
+//            startActivity(intent)
+//            finish()
 
         }
     }

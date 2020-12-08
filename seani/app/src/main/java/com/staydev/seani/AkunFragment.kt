@@ -27,7 +27,7 @@ import java.io.ByteArrayOutputStream
 import java.io.IOException
 import kotlin.math.log
 
-class AlatFragment: Fragment() {
+class AkunFragment: Fragment() {
 
     private lateinit var root:View
 

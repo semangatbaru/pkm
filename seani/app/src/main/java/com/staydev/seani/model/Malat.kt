@@ -6,6 +6,6 @@ class Malat (
     var stok:Int,
     var harga:Int,
     var foto:String,
-    var desktipsi:String
+    var desktripsi:String
 
 )

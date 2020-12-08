@@ -2,37 +2,40 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="10dp">
 
     <androidx.cardview.widget.CardView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:cardCornerRadius="15dp"
         android:layout_margin="5dp"
-        app:cardElevation="100dp"
+        app:cardElevation="3dp"
         app:cardBackgroundColor="@color/colorPrimary">
 
-        <androidx.cardview.widget.CardView
+        <ImageView
+            android:id="@+id/fotoAlat"
             android:layout_width="180dp"
             android:layout_height="150dp"
+            android:src="@drawable/ic_baseline_image_not_supported_24"
             android:layout_gravity="center_horizontal"
-            android:foreground="@drawable/alat1"
-            android:scaleType="centerCrop"
-            app:cardCornerRadius="15dp">
+            android:scaleType="centerCrop">
 
-        </androidx.cardview.widget.CardView>
+        </ImageView>
 
         <TextView
+            android:id="@+id/namaAlat"
             android:layout_width="180dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="150dp"
+            android:layout_marginTop="130dp"
             android:text="@string/combinne_ukuran_besar"
             android:textStyle="bold"
             android:textColor="@color/white"
             android:gravity="center_horizontal" />
         <TextView
+            android:id="@+id/hargaAlat"
             android:layout_width="180dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="170dp"
@@ -41,10 +44,11 @@
             android:gravity="center_horizontal"
             android:textSize="11dp"/>
         <TextView
+            android:id="@+id/deskripsiAlat"
             android:layout_width="180dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="190dp"
-            android:text="Traktor adalah kendaraan yang didesain secara spesifik untuk keperluan traksi tinggi"
+            android:text="@string/des"
             android:textColor="@color/white"
             android:gravity="left"
             android:textSize="8sp"
@@ -52,14 +56,14 @@
             android:paddingRight="10dp"/>
         <Button
             android:id="@+id/btnsewa"
-            android:layout_width="62dp"
+            android:layout_width="match_parent"
             android:layout_height="33dp"
-            android:text="@string/sewa"
+            android:text="@string/title_sewa"
             android:textColor="@color/colorPrimary"
             android:textSize="10dp"
             android:layout_marginTop="230dp"
             android:layout_gravity="center_horizontal"
-            android:backgroundTint="@drawable/backgroundicon"
+            android:backgroundTint="@color/white"
             />
     </androidx.cardview.widget.CardView>
 

@@ -10,7 +10,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout5"
         android:layout_width="match_parent"
-        android:layout_height="650dp"
+        android:layout_height="690dp"
         android:background="@drawable/bagroundputihawal"
         app:layout_constraintBottom_toBottomOf="parent"
         tools:ignore="MissingConstraints"
@@ -18,18 +18,24 @@
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/RecyclerSewa"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            tools:listitem="@layout/list_sewa"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias=""
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.197"
-            tools:ignore="MissingConstraints" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            android:layout_width="match_parent"
+            android:layout_height="580dp"
+            tools:listitem="@layout/list_sewa" />
 
+        <Button
+            android:id="@+id/btnProses"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="@string/proses"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/RecyclerSewa"
+            app:layout_constraintVertical_bias="0.919"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
