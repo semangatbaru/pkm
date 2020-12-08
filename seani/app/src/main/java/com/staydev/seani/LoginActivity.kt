@@ -48,10 +48,10 @@ class LoginActivity : AppCompatActivity() {
 
         bLogin.setOnClickListener {
             //Toast.makeText(this, "ok", Toast.LENGTH_SHORT).show()
-            signIn()
-//            val intent = Intent(this@LoginActivity, RegisterActivity::class.java)
-//            startActivity(intent)
-//            finish()
+//            signIn()
+            val intent = Intent(this@LoginActivity, RegisterActivity::class.java)
+            startActivity(intent)
+            finish()
 
         }
     }
