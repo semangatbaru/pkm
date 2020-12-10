@@ -6,6 +6,33 @@
     android:layout_height="match_parent"
     android:background="@color/colorPrimary">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        style="@style/Theme.Seani"
+        android:elevation="4dp"
+        tools:ignore="MissingConstraints">
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:textSize="20dp"
+            android:text="@string/title_sewa"
+            android:textColor="@color/white">
+
+        </TextView>
+        <ImageButton
+            android:id="@+id/keranjang"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/keranjang"
+           android:layout_marginLeft="320dp">
+
+        </ImageButton>
+
+
+
+    </androidx.appcompat.widget.Toolbar>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout5"
@@ -19,7 +46,9 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/RecyclerSewa"
             android:layout_width="match_parent"
-            android:layout_height="580dp"
+            android:layout_height="570dp"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="0dp"
             tools:listitem="@layout/list_sewa" />
 
         <Button
@@ -36,6 +65,8 @@
             tools:layout_editor_absoluteX="0dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
