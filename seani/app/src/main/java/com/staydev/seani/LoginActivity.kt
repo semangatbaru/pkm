@@ -32,7 +32,7 @@ class LoginActivity : AppCompatActivity() {
 
         if (SharedPrefManager.getInstance(this).isLoggedIn) {
             finish()
-            startActivity(Intent(this, BerandaActivity::class.java))
+            startActivity(Intent(this, ActivityBeranda::class.java))
         }
 
         val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
@@ -48,10 +48,10 @@ class LoginActivity : AppCompatActivity() {
 
         bLogin.setOnClickListener {
             //Toast.makeText(this, "ok", Toast.LENGTH_SHORT).show()
-//            signIn()
-            val intent = Intent(this@LoginActivity, RegisterActivity::class.java)
-            startActivity(intent)
-            finish()
+            signIn()
+//            val intent = Intent(this@LoginActivity, RegisterActivity::class.java)
+//            startActivity(intent)
+//            finish()
 
         }
     }
@@ -77,7 +77,7 @@ class LoginActivity : AppCompatActivity() {
             val account = completedTask.getResult(ApiException::class.java)
 
             // Signed in successfully, show authenticated UI.
-            val intent = Intent(this@LoginActivity, RegisterActivity::class.java)
+            val intent = Intent(this@LoginActivity, LoadingActivity::class.java)
             startActivity(intent)
             finish()
         } catch (e: ApiException) {

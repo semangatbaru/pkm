@@ -40,6 +40,9 @@ class RegisterActivity : AppCompatActivity() {
     private lateinit var mBatal : ImageButton
 
 
+
+
+
     private lateinit var bitmap: Bitmap
     private  var encode:String=""
 
@@ -86,6 +89,7 @@ class RegisterActivity : AppCompatActivity() {
             Toast.makeText(this, personEmail, Toast.LENGTH_SHORT).show()
 
 //
+
             mNama.setText(personName)
             mEmail.setText(personEmail)
             Picasso.get().load(personPhoto).into(mFoto)
@@ -95,13 +99,15 @@ class RegisterActivity : AppCompatActivity() {
                 .build()
             mGoogleSignInClient = GoogleSignIn.getClient(this, gso)
 
+
         }
 
     }
+
     private fun regis() {
         //first getting the values
 
-        //base()
+        base()
         val nama = mNama.text.toString()
         val email = mEmail.text.toString()
         val alamat = mAlamat.text.toString()
@@ -154,15 +160,16 @@ class RegisterActivity : AppCompatActivity() {
                         //creating a new user object
 
                         val mUser = Mlogin(
-                            userJson.getString("email"),
-                            userJson.getString("token")
+                                userJson.getInt("id_user"),
+                                userJson.getString("email"),
+                                userJson.getString("token")
                         )
                         //storing the user in shared preferences
                         SharedPrefManager.getInstance(applicationContext).mUserLogin(mUser)
                         //starting the MainActivity
 
                         finish()
-                        startActivity(Intent(applicationContext, BerandaActivity::class.java))
+                        startActivity(Intent(applicationContext, ActivityBeranda::class.java))
                         Toast.makeText(applicationContext,obj.getString("message"),Toast.LENGTH_SHORT).show()
 
                     } else {

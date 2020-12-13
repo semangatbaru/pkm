@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context=".ActivityNotification"
     android:background="@color/colorPrimary">
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/my_toolbar"
@@ -13,7 +14,7 @@
         android:elevation="4dp"
         tools:ignore="MissingConstraints">
         <ImageButton
-            android:id="@+id/icon_back_keranjang"
+            android:id="@+id/icon_back_notification"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:backgroundTint="@color/white"
@@ -23,31 +24,29 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20dp"
-            android:text="@string/keranjang"
+            android:text="@string/title_notifications"
             android:textColor="@color/white"
             android:layout_marginLeft="20dp"/>
-
     </androidx.appcompat.widget.Toolbar>
 
-
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout5"
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager_main"
+        android:layout_marginTop="60dp"
         android:layout_width="match_parent"
-        android:layout_height="650dp"
-        android:background="@drawable/bagroundputihawal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="0dp">
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/RecyclerKeranjang"
+        android:layout_height="match_parent">
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabs_main"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            tools:listitem="@layout/list_keranjang"
-            tools:ignore="MissingConstraints" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="top"
+            android:background="@color/transparent"
+            app:tabSelectedTextColor="@color/white"
+            app:tabTextColor="@color/white"
+            app:tabIndicatorColor="@color/white"
+            app:tabIndicatorHeight="5dp"/>
+    </androidx.viewpager.widget.ViewPager>
 
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

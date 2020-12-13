@@ -1,5 +1,5 @@
 package com.staydev.seani.model
 
 class Mlogin (
-    var email: String?, var token: String?
+    var id_user:Int, var email: String?, var token: String?
 )

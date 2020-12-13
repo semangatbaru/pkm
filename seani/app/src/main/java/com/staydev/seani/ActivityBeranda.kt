@@ -10,7 +10,7 @@ import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 
-class BerandaActivity : AppCompatActivity() {
+class ActivityBeranda : AppCompatActivity() {
 
     //private lateinit var mGoogleSignInClient: GoogleSignInClient
     private lateinit var toolbar: Toolbar;

@@ -2,27 +2,28 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.staydev.seani">
 
-
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
-        android:usesCleartextTraffic="true"
+        android:supportsRtl="true"
         android:theme="@style/Theme.Seani"
-
-
-
-        android:supportsRtl="true">
-        <activity android:name=".Chat"/>
+        android:usesCleartextTraffic="true">
+        <activity android:name=".ActivityNotification"></activity>
+        <activity android:name=".LoadingActivity" />
+        <activity android:name=".Chat" />
         <activity android:name=".Kritik" />
         <activity
-            android:name=".BerandaActivity"
-            android:label="@string/title_activity_beranda"/>
+            android:name=".ActivityBeranda"
+            android:label="@string/title_activity_beranda" />
         <activity android:name=".RegisterActivity" />
-        <activity android:name=".KeranjangActivity" android:label="@string/keranjang" />
+        <activity
+            android:name=".KeranjangActivity"
+            android:label="@string/keranjang" />
         <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

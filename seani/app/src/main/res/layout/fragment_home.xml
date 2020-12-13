@@ -9,24 +9,33 @@
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/my_toolbar"
-        style="@style/Theme.Seani"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="50dp"
+        style="@style/Theme.Seani"
         android:elevation="4dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:title="@string/title_home"
-        app:titleTextColor="@color/white"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints">
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="@string/title_home"
+            android:textColor="@color/white"/>
+        <ImageButton
+            android:id="@+id/icon_notification"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:backgroundTint="@color/white"
+            android:background="@drawable/ic_notifications_black_24dp"
+            android:layout_marginLeft="300dp"/>
+    </androidx.appcompat.widget.Toolbar>
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="700dp"
+        android:layout_height="640dp"
         android:background="@drawable/bagroundputihawal"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toTopOf="@id/my_toolbar"
         tools:layout_editor_absoluteX="-107dp">
 
 

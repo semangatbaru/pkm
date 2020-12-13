@@ -7,6 +7,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.Toast
+import androidx.appcompat.widget.AppCompatButton
+import androidx.appcompat.widget.AppCompatImageButton
 import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
@@ -29,6 +31,7 @@ class SewaFragment : Fragment() {
     private lateinit var mRecyclerView: RecyclerView
     private lateinit var list:ArrayList<Malat>
     private lateinit var mButtonProses:Button
+    private lateinit var mIconKeranjang:AppCompatImageButton
 
     override fun onCreateView(
             inflater: LayoutInflater,
@@ -38,8 +41,12 @@ class SewaFragment : Fragment() {
         root = inflater.inflate(R.layout.fragment_sewa, container, false)
 
         mButtonProses = root.findViewById(R.id.btnProses)
+        mIconKeranjang = root.findViewById(R.id.icon_keranjang)
 //        mButtonProses.isVisible  = false
         mButtonProses.setOnClickListener {
+            startActivity(Intent(context, KeranjangActivity::class.java))
+        }
+        mIconKeranjang.setOnClickListener {
             startActivity(Intent(context, KeranjangActivity::class.java))
         }
 
