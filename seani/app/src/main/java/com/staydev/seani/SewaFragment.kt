@@ -14,6 +14,7 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import com.android.volley.AuthFailureError
 import com.android.volley.Response
 import com.android.volley.toolbox.StringRequest
@@ -32,6 +33,7 @@ class SewaFragment : Fragment() {
     private lateinit var list:ArrayList<Malat>
     private lateinit var mButtonProses:Button
     private lateinit var mIconKeranjang:AppCompatImageButton
+    private lateinit var mSwipeRefresh: SwipeRefreshLayout
 
     override fun onCreateView(
             inflater: LayoutInflater,
@@ -54,10 +56,16 @@ class SewaFragment : Fragment() {
         list = ArrayList()
 
 
-        Toast.makeText(context, "oke", Toast.LENGTH_LONG).show()
         mRecyclerView = root.findViewById(R.id.RecyclerSewa)
         mRecyclerView.setHasFixedSize(true)
         mRecyclerView.layoutManager = GridLayoutManager(activity, 2)
+
+        mSwipeRefresh = root.findViewById(R.id.swipeRefreshAlat)
+        mSwipeRefresh.setOnRefreshListener {
+            getAlat()
+            mSwipeRefresh.isRefreshing = false
+
+        }
 
         getAlat()
         return root

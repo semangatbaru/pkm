@@ -7,5 +7,6 @@ object Urls {
     val URL_Register = ROOT_URL + "register"
     val URL_Alat = ROOT_URL + "alat"
     val URL_Check = ROOT_URL + "show"
+    val URL_Proses = ROOT_URL + "proses"
 
 }
