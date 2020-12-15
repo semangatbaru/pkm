@@ -34,8 +34,6 @@ class AdapterAlat(
         val mBtnSewa :TextView = view.findViewById(R.id.btnsewa)
 
     }
-    private lateinit var keranjang:ArrayList<Mkeranjang>
-    private lateinit var mRecyclerView: RecyclerView
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val layoutInflater = LayoutInflater.from(parent.context)
@@ -43,7 +41,7 @@ class AdapterAlat(
         view.setOnClickListener {
             Toast.makeText(context, "ini itemnya", Toast.LENGTH_SHORT).show()
         }
-        keranjang = ArrayList()
+
 
 
 
@@ -68,36 +66,9 @@ class AdapterAlat(
         holder.mBtnSewa.setOnClickListener {
            if (!ContentKeranjang.isAlatSelected(id_alat)){
                ContentKeranjang.addAlat(id_alat,nama_alat, harga, foto)
+               Toast.makeText(context, "Berhasil Menambahkan Item Ke Keranjang", Toast.LENGTH_SHORT).show()
            }
-
-
-
-
-            //Log.d("tagg", list.size.toString())
-            //Log.d("tag", id_alat.toString()+nama_alat)
-
         }
-
-
     }
-
     override fun getItemCount(): Int = list.size
-
-    private fun keranjang(id_alat:Int, nama_alat:String, harga:Int, foto:String){
-        var nama = nama_alat
-        var id_alat = id_alat
-        var harga = harga
-
-        Log.d("parameter", id_alat.toString()+nama+harga)
-        keranjang.add(
-                Mkeranjang(
-                        id_alat,
-                        nama,
-                        harga,
-                        foto
-                )
-        )
-//        mRecyclerView.adapter = AdapterKeranjang(keranjang)
-
-    }
 }

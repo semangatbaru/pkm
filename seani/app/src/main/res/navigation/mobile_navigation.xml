@@ -19,7 +19,7 @@
 
     <fragment
         android:id="@+id/navigation_notifications"
-        android:name="com.staydev.seani.AkunFragment"
+        android:name="com.staydev.seani.InfoFragment"
         android:label="@string/info"
         tools:layout="@layout/activity_tambah_alat" />
 </navigation>

@@ -17,7 +17,7 @@
             android:layout_height="wrap_content">
 
             <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/mRecyclerView"
+                android:id="@+id/mRecyclerViewProses"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 tools:listitem="@layout/list_status"/>

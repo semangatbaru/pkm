@@ -8,17 +8,13 @@ import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
-import com.squareup.picasso.Picasso
 import com.staydev.seani.R
-import com.staydev.seani.model.ContentKeranjang
-import com.staydev.seani.model.Malat
-import com.staydev.seani.model.Mkeranjang
 import com.staydev.seani.model.Msewa
 import java.text.NumberFormat
+import java.text.SimpleDateFormat
 import java.util.*
-import kotlin.collections.ArrayList
 
-class AdapterStatus (
+class AdapterStatus(
         private val list: ArrayList<Msewa>,
         private val context: Context
 
@@ -45,12 +41,17 @@ class AdapterStatus (
     override fun onBindViewHolder(holder: AdapterStatus.ViewHolder, position: Int) {
         val  sewa = list[position]
         var total = sewa.total
+        var tanggal = sewa.tgl_sewa
 
 
 
         val str: String = NumberFormat.getNumberInstance(Locale.US).format(total)
+        val parser = SimpleDateFormat("yyyy-MM-dd")
+        val formatter = SimpleDateFormat("dd MMM yyyy")
+        val formattedDate = formatter.format(parser.parse(tanggal))
+
         holder.mIdSewa.text = sewa.id_sewa
-        holder.mTanggal.text = sewa.tgl_sewa
+        holder.mTanggal.text = formattedDate
         holder.mTotal.text = str
 
 

@@ -40,7 +40,7 @@ class ProsesFragment : Fragment() {
 
         list = ArrayList()
 
-        mRecyclerView = root.findViewById(R.id.mRecyclerView)
+        mRecyclerView = root.findViewById(R.id.mRecyclerViewProses)
         mRecyclerView.setHasFixedSize(true)
         mRecyclerView.layoutManager = LinearLayoutManager(activity)
 

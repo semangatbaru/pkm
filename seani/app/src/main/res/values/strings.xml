@@ -37,4 +37,8 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="idSewa">Tr-091220-1</string>
     <string name="total">100.000</string>
+    <string name="S_K">Syarat dan Ketentuan</string>
+    <string name="KP">Kebijakan dan Privasi</string>
+    <string name="profil">Profil</string>
+    <string name="versi">Versi 1.0.0</string>
 </resources>

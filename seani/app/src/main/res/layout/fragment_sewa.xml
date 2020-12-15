@@ -21,11 +21,11 @@
             android:textColor="@color/white"/>
         <ImageButton
             android:id="@+id/icon_keranjang"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
+            android:layout_width="36dp"
+            android:layout_height="32dp"
             android:backgroundTint="@color/white"
             android:background="@drawable/keranjang"
-           android:layout_marginLeft="300dp"/>
+           android:layout_marginLeft="290dp"/>
     </androidx.appcompat.widget.Toolbar>
 
     <androidx.constraintlayout.widget.ConstraintLayout
