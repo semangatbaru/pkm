@@ -13,6 +13,8 @@ object Urls {
     val URL_JadwalUlang = ROOT_URL + "ju"
     val URL_Setuju = ROOT_URL + "ju"
 
+    val URL_Config = ROOT_URL + "config"
+
 
 
 }

@@ -41,4 +41,6 @@
     <string name="KP">Kebijakan dan Privasi</string>
     <string name="profil">Profil</string>
     <string name="versi">Versi 1.0.0</string>
+    <string name="tentang_kami">Tentang Kami</string>
+    <string name="detail_sewa">Detail Sewa</string>
 </resources>

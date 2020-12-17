@@ -73,6 +73,9 @@ class SewaFragment : Fragment() {
     private fun getAlat() {
         val user = SharedPrefManager.getInstance(requireContext()).mlogin
         val token = user.token.toString()
+        val id_user = user.id_user.toString()
+
+        Toast.makeText(context, id_user, Toast.LENGTH_SHORT).show()
 
 
         val stringRequest = object : StringRequest(

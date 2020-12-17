@@ -26,6 +26,7 @@ class AdapterStatus(
         val mDetail : ImageView = view.findViewById(R.id.detailSewa)
 
     }
+    private lateinit var mDialogdetail:View
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val layoutInflater = LayoutInflater.from(parent.context)
@@ -58,10 +59,13 @@ class AdapterStatus(
 
         holder.mDetail.setOnClickListener {
             Toast.makeText(context, "detail", Toast.LENGTH_SHORT).show()
+            mDialogdetail = LayoutInflater.from(context).inflate(
+                    R.layout.activity_detail,
+                    null
+            )
         }
 
 
     }
-
     override fun getItemCount(): Int = list.size
 }
