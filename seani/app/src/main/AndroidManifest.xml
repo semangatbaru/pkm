@@ -13,7 +13,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Seani"
         android:usesCleartextTraffic="true">
-        <activity android:name=".SyaratActivity"></activity>
+        <activity android:name=".PesananActivity"></activity>
+        <activity android:name=".SyaratActivity" />
         <activity android:name=".AboutusActivity" />
         <activity android:name=".PrivaciActivity" />
         <activity android:name=".ActivityNotification" />

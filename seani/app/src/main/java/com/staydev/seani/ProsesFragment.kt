@@ -57,10 +57,11 @@ class ProsesFragment : Fragment() {
     private fun getStatusProses() {
         val user = SharedPrefManager.getInstance(requireContext()).mlogin
         val token = user.token.toString()
+        val id_user = user.id_user.toString()
 
 
         val stringRequest = object : StringRequest(
-                Method.GET, Urls.URL_Proses,
+                Method.POST, Urls.URL_Proses,
                 Response.Listener { response ->
                     Log.d("respons", response);
 
@@ -87,7 +88,6 @@ class ProsesFragment : Fragment() {
                                                 data.getInt("id_user"),
                                                 data.getString("tgl_sewa"),
                                                 data.getInt("total"),
-                                                data.getInt("bayar"),
                                                 data.getString("status"),
                                                 data.getDouble("lahan")
                                         )
@@ -106,7 +106,7 @@ class ProsesFragment : Fragment() {
                 },
                 Response.ErrorListener { error ->
                     Toast.makeText(
-                            activity,
+                            context,
                             error.message,
                             Toast.LENGTH_SHORT
                     ).show()
@@ -116,6 +116,7 @@ class ProsesFragment : Fragment() {
             override fun getParams(): Map<String, String> {
 
                 val params = HashMap<String, String>()
+                params["id_user"] = id_user
                 return params
             }
             override fun getHeaders(): Map<String, String> {

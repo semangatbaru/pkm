@@ -34,16 +34,18 @@ class AdapterAlat(
         val mBtnSewa :TextView = view.findViewById(R.id.btnsewa)
 
     }
+    private lateinit var keranjang:ArrayList<Mkeranjang>
+    private lateinit var mIsi:TextView
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val layoutInflater = LayoutInflater.from(parent.context)
         val view = layoutInflater.inflate(R.layout.list_sewa, parent, false)
+
+
+        keranjang = ArrayList()
         view.setOnClickListener {
             Toast.makeText(context, "ini itemnya", Toast.LENGTH_SHORT).show()
         }
-
-
-
 
         return ViewHolder(view)
     }
@@ -67,6 +69,7 @@ class AdapterAlat(
            if (!ContentKeranjang.isAlatSelected(id_alat)){
                ContentKeranjang.addAlat(id_alat,nama_alat, harga, foto)
                Toast.makeText(context, "Berhasil Menambahkan Item Ke Keranjang", Toast.LENGTH_SHORT).show()
+               //mIsi.text = keranjang.size.toString()
            }
         }
     }

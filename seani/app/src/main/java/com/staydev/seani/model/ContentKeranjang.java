@@ -30,6 +30,13 @@ public class ContentKeranjang {
         }
         return false;
     }
+    public static boolean getId(Integer id_alat) {
+        for (Mkeranjang mkeranjang : KERANJANG_LIST){
+            if (mkeranjang.getId_alat() == id_alat )
+                return true;
+        }
+        return false;
+    }
 
     public static void removeAlat(Mkeranjang item){
         KERANJANG_LIST.remove(item);

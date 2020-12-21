@@ -2,8 +2,10 @@ package com.staydev.seani
 
 //import com.staydev.seani.adapter.AdapterKeranjang
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
+import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.AppCompatImageButton
@@ -16,6 +18,7 @@ import com.staydev.seani.model.Mkeranjang
 class KeranjangActivity : AppCompatActivity() {
     private lateinit var keranjang:ArrayList<Mkeranjang>
     private lateinit var mBackKeranjang: AppCompatImageButton
+    private lateinit var mProses: Button
 
 
     private lateinit var mRecyclerView: RecyclerView
@@ -25,6 +28,10 @@ class KeranjangActivity : AppCompatActivity() {
         setContentView(R.layout.activity_keranjang)
 
         mBackKeranjang = findViewById(R.id.icon_back_keranjang)
+        mProses = findViewById(R.id.btnProses)
+        mProses.setOnClickListener {
+            startActivity(Intent(this, PesananActivity::class.java))
+        }
         mBackKeranjang.setOnClickListener{
             onBackPressed()
         }
@@ -33,7 +40,6 @@ class KeranjangActivity : AppCompatActivity() {
         mRecyclerView.setHasFixedSize(true)
         mRecyclerView.layoutManager = LinearLayoutManager(this)
         mRecyclerView.adapter = AdapterKeranjang(ContentKeranjang.KERANJANG_LIST, this)
-        Log.d("size", keranjang.size.toString())
 
 
     }

@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.widget.AppCompatButton
 import androidx.appcompat.widget.AppCompatImageButton
@@ -23,6 +24,7 @@ import com.staydev.seani.helper.SharedPrefManager
 import com.staydev.seani.helper.Urls
 import com.staydev.seani.helper.VolleySingleton
 import com.staydev.seani.model.Malat
+import com.staydev.seani.model.Mkeranjang
 import org.json.JSONException
 import org.json.JSONObject
 
@@ -34,6 +36,8 @@ class SewaFragment : Fragment() {
     private lateinit var mButtonProses:Button
     private lateinit var mIconKeranjang:AppCompatImageButton
     private lateinit var mSwipeRefresh: SwipeRefreshLayout
+    private lateinit var keranjang:ArrayList<Mkeranjang>
+    private lateinit var mIsi:TextView
 
     override fun onCreateView(
             inflater: LayoutInflater,
@@ -42,14 +46,20 @@ class SewaFragment : Fragment() {
     ): View? {
         root = inflater.inflate(R.layout.fragment_sewa, container, false)
 
-        mButtonProses = root.findViewById(R.id.btnProses)
+        mButtonProses = root.findViewById(R.id.btnLanjutkan)
         mIconKeranjang = root.findViewById(R.id.icon_keranjang)
+        mIsi = root.findViewById(R.id.isiKeranjang)
 //        mButtonProses.isVisible  = false
+        keranjang = ArrayList()
+
         mButtonProses.setOnClickListener {
             startActivity(Intent(context, KeranjangActivity::class.java))
         }
         mIconKeranjang.setOnClickListener {
             startActivity(Intent(context, KeranjangActivity::class.java))
+        }
+        if(keranjang.size == 0){
+            mIsi.text = "0"
         }
 
 
@@ -146,5 +156,10 @@ class SewaFragment : Fragment() {
 
 
         VolleySingleton.getInstance(requireContext()).addToRequestQueue(stringRequest)
+    }
+
+    override fun onResume() {
+        super.onResume()
+        mIsi.text = keranjang.size.toString()
     }
 }

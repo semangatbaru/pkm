@@ -63,7 +63,8 @@ class AdapterKeranjang (
         Picasso.get().load(url).into(holder.mGambarAlat)
 
         holder.mHapus.setOnClickListener{
-            Toast.makeText(context, "okok", Toast.LENGTH_SHORT).show()
+            ContentKeranjang.removeAlat(keranjang)
+            notifyDataSetChanged()
         }
         holder.mGambarAlat.setOnClickListener{
             Log.d("asdf", "imag")

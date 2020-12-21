@@ -19,13 +19,22 @@
             android:textSize="20dp"
             android:text="@string/title_sewa"
             android:textColor="@color/white"/>
+        <TextView
+            android:id="@+id/isiKeranjang"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="270dp"
+            android:textStyle="bold"
+            android:layout_height="30dp"
+            android:textSize="20dp"
+            android:text="1"
+            android:textColor="@color/red"/>
         <ImageButton
             android:id="@+id/icon_keranjang"
             android:layout_width="36dp"
             android:layout_height="32dp"
             android:backgroundTint="@color/white"
-            android:background="@drawable/keranjang"
-           android:layout_marginLeft="290dp"/>
+            android:background="@drawable/keranjang"/>
+
     </androidx.appcompat.widget.Toolbar>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -52,11 +61,11 @@
         </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
         <Button
-            android:id="@+id/btnProses"
+            android:id="@+id/btnLanjutkan"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:backgroundTint="@color/colorPrimary"
-            android:text="@string/proses"
+            android:text="@string/lanjutkan"
             android:textColor="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toTopOf="@+id/swipeRefreshAlat"

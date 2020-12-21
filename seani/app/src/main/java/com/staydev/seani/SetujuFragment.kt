@@ -53,10 +53,11 @@ class SetujuFragment : Fragment() {
     private fun getStatusSetuju() {
         val user = SharedPrefManager.getInstance(requireContext()).mlogin
         val token = user.token.toString()
+        val id_user = user.id_user
 
 
         val stringRequest = object : StringRequest(
-                Method.GET, Urls.URL_Setuju,
+                Method.POST, Urls.URL_Setuju,
                 Response.Listener { response ->
                     Log.d("respons", response);
 
@@ -83,7 +84,6 @@ class SetujuFragment : Fragment() {
                                                 data.getInt("id_user"),
                                                 data.getString("tgl_sewa"),
                                                 data.getInt("total"),
-                                                data.getInt("bayar"),
                                                 data.getString("status"),
                                                 data.getDouble("lahan")
                                         )
@@ -102,7 +102,7 @@ class SetujuFragment : Fragment() {
                 },
                 Response.ErrorListener { error ->
                     Toast.makeText(
-                            activity,
+                            context,
                             error.message,
                             Toast.LENGTH_SHORT
                     ).show()
@@ -110,8 +110,8 @@ class SetujuFragment : Fragment() {
                 }) {
             @Throws(AuthFailureError::class)
             override fun getParams(): Map<String, String> {
-
                 val params = HashMap<String, String>()
+                params["id_user"] = id_user.toString()
                 return params
             }
             override fun getHeaders(): Map<String, String> {
