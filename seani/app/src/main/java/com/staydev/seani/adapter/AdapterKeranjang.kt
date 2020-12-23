@@ -21,7 +21,8 @@ import kotlin.collections.ArrayList
 
 class AdapterKeranjang (
         private val keranjang: MutableList<Mkeranjang>,
-        private val context: Context
+        private val context: Context,
+
 ): RecyclerView.Adapter<AdapterKeranjang.ViewHolder>(){
     inner class ViewHolder(view: View) : RecyclerView.ViewHolder(view){
 

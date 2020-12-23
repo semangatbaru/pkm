@@ -9,6 +9,7 @@ import android.widget.Adapter
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.widget.AppCompatTextView
 import androidx.recyclerview.widget.RecyclerView
 import com.squareup.picasso.Picasso
 import com.staydev.seani.R
@@ -23,7 +24,8 @@ import kotlin.math.log
 
 class AdapterAlat(
         private val list: ArrayList<Malat>,
-        private val context: Context
+        private val context: Context,
+        private val  mIsi:AppCompatTextView
 
 ) : RecyclerView.Adapter<AdapterAlat.ViewHolder>(){
     inner class ViewHolder(view: View) : RecyclerView.ViewHolder(view){
@@ -35,7 +37,7 @@ class AdapterAlat(
 
     }
     private lateinit var keranjang:ArrayList<Mkeranjang>
-    private lateinit var mIsi:TextView
+
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val layoutInflater = LayoutInflater.from(parent.context)
@@ -69,7 +71,7 @@ class AdapterAlat(
            if (!ContentKeranjang.isAlatSelected(id_alat)){
                ContentKeranjang.addAlat(id_alat,nama_alat, harga, foto)
                Toast.makeText(context, "Berhasil Menambahkan Item Ke Keranjang", Toast.LENGTH_SHORT).show()
-               //mIsi.text = keranjang.size.toString()
+               mIsi.text = ContentKeranjang.KERANJANG_LIST.size.toString()
            }
         }
     }

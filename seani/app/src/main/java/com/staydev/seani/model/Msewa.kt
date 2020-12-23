@@ -1,6 +1,5 @@
 package com.staydev.seani.model
 
-import java.sql.Date
 
 class Msewa (
         var id_sewa:String,

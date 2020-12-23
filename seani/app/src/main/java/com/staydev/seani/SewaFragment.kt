@@ -10,6 +10,7 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.widget.AppCompatButton
 import androidx.appcompat.widget.AppCompatImageButton
+import androidx.appcompat.widget.AppCompatTextView
 import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
@@ -37,7 +38,7 @@ class SewaFragment : Fragment() {
     private lateinit var mIconKeranjang:AppCompatImageButton
     private lateinit var mSwipeRefresh: SwipeRefreshLayout
     private lateinit var keranjang:ArrayList<Mkeranjang>
-    private lateinit var mIsi:TextView
+    private lateinit var mIsi:AppCompatTextView
 
     override fun onCreateView(
             inflater: LayoutInflater,
@@ -121,7 +122,7 @@ class SewaFragment : Fragment() {
                                         )
                                 )
                             }
-                            mRecyclerView.adapter = AdapterAlat(list, requireContext())
+                            mRecyclerView.adapter = AdapterAlat(list, requireContext(), mIsi)
 
                         } else {
                             Toast.makeText(activity, obj.getString("message"), Toast.LENGTH_SHORT)

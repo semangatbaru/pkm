@@ -30,7 +30,12 @@ class KeranjangActivity : AppCompatActivity() {
         mBackKeranjang = findViewById(R.id.icon_back_keranjang)
         mProses = findViewById(R.id.btnProses)
         mProses.setOnClickListener {
-            startActivity(Intent(this, PesananActivity::class.java))
+            if(ContentKeranjang.KERANJANG_LIST.size == 0){
+                Toast.makeText(this, "Tidak Ada Item Yang dipesan", Toast.LENGTH_SHORT).show()
+            }else{
+                startActivity(Intent(this, PesananActivity::class.java))
+            }
+
         }
         mBackKeranjang.setOnClickListener{
             onBackPressed()

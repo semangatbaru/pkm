@@ -44,4 +44,7 @@
     <string name="tentang_kami">Tentang Kami</string>
     <string name="detail_sewa">Detail Sewa</string>
     <string name="lanjutkan">Lanjutkan</string>
+    <string name="title_total">Total</string>
+    <string name="submit">Submit</string>
+    <string name="masukkan_luas_lahan">Masukkan Luas Lahan</string>
 </resources>
