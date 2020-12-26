@@ -24,6 +24,7 @@ import com.staydev.seani.adapter.AdapterAlat
 import com.staydev.seani.helper.SharedPrefManager
 import com.staydev.seani.helper.Urls
 import com.staydev.seani.helper.VolleySingleton
+import com.staydev.seani.model.ContentKeranjang
 import com.staydev.seani.model.Malat
 import com.staydev.seani.model.Mkeranjang
 import org.json.JSONException
@@ -161,6 +162,7 @@ class SewaFragment : Fragment() {
 
     override fun onResume() {
         super.onResume()
-        mIsi.text = keranjang.size.toString()
+        mIsi.text = ContentKeranjang.KERANJANG_LIST.size.toString()
+        Log.e("isis", ContentKeranjang.KERANJANG_LIST.size.toString())
     }
 }
