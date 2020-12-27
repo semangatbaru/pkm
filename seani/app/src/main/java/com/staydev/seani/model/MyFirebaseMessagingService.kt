@@ -21,7 +21,7 @@ class MyFirebaseMessagingService : FirebaseMessagingService() {
 
 
     private val TAG = "FireBaseMessagingService"
-    var NOTIFICATION_CHANNEL_ID = "net.larntech.notification"
+    var NOTIFICATION_CHANNEL_ID = "com.staydev.seani"
     val NOTIFICATION_ID = 100
 
     override fun onMessageReceived(remoteMessage: RemoteMessage) {
@@ -29,7 +29,7 @@ class MyFirebaseMessagingService : FirebaseMessagingService() {
 
         Log.e("message","Message Received ...");
 
-        if (remoteMessage.data.size > 0) {
+        if (remoteMessage.data.isNotEmpty()) {
             val title = remoteMessage.data["title"]
             val body = remoteMessage.data["body"]
             showNotification(applicationContext, title, body)
@@ -54,8 +54,7 @@ class MyFirebaseMessagingService : FirebaseMessagingService() {
         title: String?,
         message: String?
     ) {
-        val ii: Intent
-        ii = Intent(context, ActivityBeranda::class.java)
+        val ii: Intent = Intent(context, ActivityBeranda::class.java)
         ii.data = Uri.parse("custom://" + System.currentTimeMillis())
         ii.action = "actionstring" + System.currentTimeMillis()
         ii.flags = Intent.FLAG_ACTIVITY_SINGLE_TOP or Intent.FLAG_ACTIVITY_CLEAR_TOP
@@ -105,5 +104,6 @@ class MyFirebaseMessagingService : FirebaseMessagingService() {
             Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP
         return if (useWhiteIcon) R.mipmap.ic_launcher else R.mipmap.ic_launcher
     }
+
 
 }
