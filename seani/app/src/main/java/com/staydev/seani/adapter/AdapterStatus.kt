@@ -23,7 +23,6 @@ class AdapterStatus(
         val mIdSewa: TextView = view.findViewById(R.id.idSewa)
         val mTanggal : TextView = view.findViewById(R.id.tanggalSewa)
         val mTotal : TextView = view.findViewById(R.id.totalSewa)
-        val mDetail : ImageView = view.findViewById(R.id.detailSewa)
 
     }
     private lateinit var mDialogdetail:View
@@ -55,15 +54,6 @@ class AdapterStatus(
         holder.mTanggal.text = formattedDate
         holder.mTotal.text = str
 
-
-
-        holder.mDetail.setOnClickListener {
-            Toast.makeText(context, "detail", Toast.LENGTH_SHORT).show()
-            mDialogdetail = LayoutInflater.from(context).inflate(
-                    R.layout.activity_detail,
-                    null
-            )
-        }
 
 
     }

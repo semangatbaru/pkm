@@ -24,7 +24,7 @@
             android:id="@+id/icon_keranjang"
             android:layout_width="36dp"
             android:layout_height="32dp"
-            android:layout_marginLeft="280dp"
+            android:layout_marginLeft="260dp"
             android:backgroundTint="@color/white"
             android:background="@drawable/keranjang"/>
         <TextView
@@ -43,22 +43,23 @@
         android:id="@+id/constraintLayout5"
         android:layout_width="match_parent"
         android:layout_height="690dp"
+        android:layout_marginTop="50dp"
         android:background="@drawable/bagroundputihawal"
         app:layout_constraintBottom_toBottomOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="0dp">
+        app:layout_constraintTop_toBottomOf="@+id/my_toolbar">
 
         <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
             android:id="@+id/swipeRefreshAlat"
             android:layout_width="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/constraintLayout5"
+            app:layout_constraintTop_toTopOf="@+id/constraintLayout5"
             android:layout_height="585dp">
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/RecyclerSewa"
                 android:layout_width="match_parent"
-                android:layout_height="590dp"
-                app:layout_constraintTop_toTopOf="parent"
-                tools:layout_editor_absoluteX="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="50dp"
                 tools:listitem="@layout/list_sewa" />
         </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 

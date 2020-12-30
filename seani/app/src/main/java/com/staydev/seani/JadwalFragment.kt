@@ -14,6 +14,7 @@ import com.android.volley.AuthFailureError
 import com.android.volley.Response
 import com.android.volley.toolbox.StringRequest
 import com.staydev.seani.adapter.AdapterStatus
+import com.staydev.seani.adapter.AdapterStatusJU
 import com.staydev.seani.helper.SharedPrefManager
 import com.staydev.seani.helper.Urls
 import com.staydev.seani.helper.VolleySingleton
@@ -89,7 +90,7 @@ class JadwalFragment : Fragment() {
                                         )
                                 )
                             }
-                            mRecyclerView.adapter = AdapterStatus(list, requireContext())
+                            mRecyclerView.adapter = AdapterStatusJU(list, requireContext())
 
                         } else {
                             Toast.makeText(activity, obj.getString("message"), Toast.LENGTH_SHORT)

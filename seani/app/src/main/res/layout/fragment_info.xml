@@ -26,16 +26,17 @@
             android:layout_height="40dp"
             android:backgroundTint="@color/white"
             android:background="@drawable/ic_baseline_exit_to_app_24"
-            android:layout_marginLeft="280dp"/>
+            android:layout_marginLeft="270dp"/>
     </androidx.appcompat.widget.Toolbar>
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="640dp"
+        android:layout_height="match_parent"
         android:background="@drawable/bagroundputihawal"
+        android:layout_marginTop="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="@id/my_toolbar">
+        app:layout_constraintTop_toBottomOf="@id/my_toolbar">
 
         <androidx.cardview.widget.CardView
             android:id="@+id/Profil"

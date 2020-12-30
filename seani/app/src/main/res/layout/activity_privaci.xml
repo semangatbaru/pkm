@@ -34,7 +34,7 @@
         android:layout_height="640dp"
         android:background="@drawable/bagroundputihawal"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="@id/my_toolbar"
+        app:layout_constraintTop_toBottomOf="@id/my_toolbar"
         tools:layout_editor_absoluteX="-107dp">
 
 

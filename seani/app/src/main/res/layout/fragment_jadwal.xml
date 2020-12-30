@@ -20,7 +20,7 @@
                 android:id="@+id/mRecyclerViewJU"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                tools:listitem="@layout/list_status"/>
+                tools:listitem="@layout/list_ju"/>
         </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
     </RelativeLayout>
 

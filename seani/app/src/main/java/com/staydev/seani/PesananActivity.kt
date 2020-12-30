@@ -38,6 +38,7 @@ class PesananActivity : AppCompatActivity() {
     private lateinit var valueQty: String
     private lateinit var mLuas:EditText
     private lateinit var mSubmit:Button
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_pesanan)
@@ -78,6 +79,71 @@ class PesananActivity : AppCompatActivity() {
         getData()
 
 
+    }
+    private fun postNfotif() {
+        //first getting the values
+        val user = SharedPrefManager.getInstance(this).mlogin
+        val token = user.token.toString()
+        val id_user = user.id_user
+
+        val sdf = SimpleDateFormat("yyyy-MM-dd")
+        val tgl_sewa = sdf.format(Date(mDate.date))
+
+        val lahan = mLuas.text.toString()
+
+
+        //if everything is fine
+
+        val stringRequest = object : StringRequest(
+                Method.POST, Urls.URL_Transaksi,
+                Response.Listener { response ->
+                    Log.d("response", response)
+
+
+                    try {
+                        //converting response to json object
+                        val obj = JSONObject(response)
+
+                        //Toast.makeText(applicationContext, obj.getString("message"), Toast.LENGTH_LONG).show()
+
+                        //if no error in response
+                        if (obj.getString("success") == "true") {
+                            //Toast.makeText(applicationContext, obj.getString("message"), Toast.LENGTH_LONG).show()
+
+                            //getting the user from the response
+
+
+                            finish()
+                            startActivity(Intent(applicationContext, ActivityNotification::class.java))
+                            Toast.makeText(applicationContext, obj.getString("message"), Toast.LENGTH_SHORT).show()
+
+                        } else {
+                            Toast.makeText(
+                                    this,
+                                    obj.getString("message"),
+                                    Toast.LENGTH_SHORT
+                            ).show()
+                        }
+                    } catch (e: JSONException) {
+                        e.printStackTrace()
+                    }
+                },
+                Response.ErrorListener { error -> Toast.makeText(this, error.message, Toast.LENGTH_SHORT).show() }) {
+            @Throws(AuthFailureError::class)
+            override fun getParams(): Map<String, String> {
+                val params = LinkedHashMap<String, String>()
+                params["to"] = "cx2G_RYFQBunAjUsjQvQug:APA91bEZW7IjUbV-dhjg8KETbqa432hCnhdJPuZvcZZ7fQTeYYxRVRZWErPuienj6qFfkZdIthTMMvVLYQwFjE5GrUziz0vd9AohAgKsd5s-MPBS_p_uxrt1Z2ugpGKIBR0-gTjGZn2J"
+                Log.e("param", params.toString())
+                return params
+            }
+            override fun getHeaders(): Map<String, String> {
+                val headers: MutableMap<String, String> = HashMap()
+                headers["Accept"] = "application/json"
+                headers["Authorization"] = "Bearer $token"
+                return headers
+            }
+        }
+        VolleySingleton.getInstance(applicationContext).addToRequestQueue(stringRequest)
     }
     private fun postTransaksi() {
         //first getting the values
