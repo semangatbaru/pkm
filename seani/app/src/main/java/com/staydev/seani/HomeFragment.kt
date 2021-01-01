@@ -6,6 +6,7 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageButton
 import androidx.appcompat.widget.AppCompatImageButton
 import androidx.fragment.app.Fragment
 import com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -17,7 +18,7 @@ import com.google.firebase.iid.FirebaseInstanceId
 class HomeFragment : Fragment() {
     private lateinit var root:View
     private lateinit var mFloat: FloatingActionButton
-    private lateinit var mNotification: AppCompatImageButton
+    private lateinit var mNotification: ImageButton
 
 
     override fun onCreateView(
@@ -33,7 +34,7 @@ class HomeFragment : Fragment() {
             startActivity(Intent(context, ActivityNotification::class.java))
         }
         mFloat.setOnClickListener { view ->
-            Snackbar.make(view, "Here's a Snackbar", Snackbar.LENGTH_LONG)
+            Snackbar.make(view, "Here's a Chat but On Dev", Snackbar.LENGTH_LONG)
                     .setAction("Action", null)
                     .show()
         }

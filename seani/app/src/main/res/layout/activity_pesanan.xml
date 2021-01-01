@@ -6,33 +6,38 @@
     android:layout_height="match_parent"
     tools:context=".PesananActivity"
     android:background="@color/colorPrimary">
-    <androidx.appcompat.widget.Toolbar
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/my_toolbar"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         style="@style/Theme.Seani"
         android:elevation="4dp"
-        tools:ignore="MissingConstraints">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
         <ImageButton
             android:id="@+id/icon_back_pesanan"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:backgroundTint="@color/white"
-            android:layout_marginRight="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
             android:background="@drawable/ic_baseline_arrow_back_24"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20sp"
             android:text="@string/checkout"
+            android:layout_marginStart="10dp"
             android:textColor="@color/white"
-            android:layout_marginLeft="20dp"/>
+            app:layout_constraintStart_toEndOf="@id/icon_back_pesanan"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="10dp" />
 
-    </androidx.appcompat.widget.Toolbar>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout5"
+        android:id="@+id/consFins"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/bagroundputihawal"
@@ -118,7 +123,6 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:layout_marginLeft="10dp"
-                    android:layout_marginTop="10dp"
                     android:text="@string/title_total"
                     android:textSize="35sp"
                     app:layout_constraintTop_toBottomOf="@+id/garisbawah3"
@@ -128,7 +132,6 @@
                     android:id="@+id/grandTotal"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
                     android:text="@string/total"
                     android:textSize="35sp"
                     android:textStyle="bold"
@@ -148,7 +151,7 @@
                     android:backgroundTint="@color/colorPrimary"
                     android:text="@string/submit"
                     android:textColor="@color/white"
-                    app:layout_constraintBottom_toBottomOf="parent"/>
+                    app:layout_constraintTop_toBottomOf="@id/textgrandtotal"/>
             </androidx.constraintlayout.widget.ConstraintLayout>
         </ScrollView>
 

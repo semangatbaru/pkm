@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.ImageButton
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.widget.AppCompatButton
@@ -36,10 +37,10 @@ class SewaFragment : Fragment() {
     private lateinit var mRecyclerView: RecyclerView
     private lateinit var list:ArrayList<Malat>
     private lateinit var mButtonProses:Button
-    private lateinit var mIconKeranjang:AppCompatImageButton
+    private lateinit var mIconKeranjang:ImageButton
     private lateinit var mSwipeRefresh: SwipeRefreshLayout
     private lateinit var keranjang:ArrayList<Mkeranjang>
-    private lateinit var mIsi:AppCompatTextView
+    private lateinit var mIsi:TextView
 
     override fun onCreateView(
             inflater: LayoutInflater,

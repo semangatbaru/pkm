@@ -6,6 +6,7 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
@@ -24,7 +25,7 @@ class InfoFragment:Fragment(){
     private lateinit var mFoto:ImageView
     private lateinit var mNama:TextView
     private lateinit var mGoogleSignInClient: GoogleSignInClient
-    private lateinit var mIconSignOut: AppCompatImageButton
+    private lateinit var mIconSignOut: ImageButton
     private lateinit var mTentang:CardView
     private lateinit var mSyarat:CardView
     private lateinit var mPrivacy:CardView

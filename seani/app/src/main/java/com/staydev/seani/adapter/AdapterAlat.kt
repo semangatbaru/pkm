@@ -25,7 +25,7 @@ import kotlin.math.log
 class AdapterAlat(
         private val list: ArrayList<Malat>,
         private val context: Context,
-        private val  mIsi:AppCompatTextView
+        private val  mIsi:TextView
 
 ) : RecyclerView.Adapter<AdapterAlat.ViewHolder>(){
     inner class ViewHolder(view: View) : RecyclerView.ViewHolder(view){

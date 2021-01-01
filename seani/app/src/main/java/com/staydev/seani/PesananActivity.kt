@@ -29,7 +29,7 @@ import kotlin.collections.set
 
 class PesananActivity : AppCompatActivity() {
     private lateinit var keranjang:ArrayList<Mkeranjang>
-    private lateinit var mBack: AppCompatImageButton
+    private lateinit var mBack: ImageButton
     private lateinit var mId: TextView
     private lateinit var mQty: TextView
     private lateinit var mGrandTotal: TextView
@@ -160,7 +160,7 @@ class PesananActivity : AppCompatActivity() {
 
         //validating inputs
         if (TextUtils.isEmpty(lahan)) {
-            mLuas.error = "Masukkan Nama Anda"
+            mLuas.error = "Masukkan Luas Lahan"
             mLuas.requestFocus()
             return
         }

@@ -7,18 +7,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-    <androidx.appcompat.widget.Toolbar
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/my_toolbar"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         style="@style/Theme.Seani"
         android:elevation="4dp"
-        tools:ignore="MissingConstraints">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
         <TextView
             android:layout_width="60dp"
             android:layout_height="wrap_content"
             android:textSize="20dp"
             android:text="@string/info"
+            app:layout_constraintStart_toStartOf="@id/my_toolbar"
+            app:layout_constraintTop_toTopOf="@+id/my_toolbar"
             android:textColor="@color/white"/>
         <ImageButton
             android:id="@+id/iconSignOut"
@@ -26,11 +29,13 @@
             android:layout_height="40dp"
             android:backgroundTint="@color/white"
             android:background="@drawable/ic_baseline_exit_to_app_24"
-            android:layout_marginLeft="270dp"/>
-    </androidx.appcompat.widget.Toolbar>
+            app:layout_constraintEnd_toEndOf="@id/my_toolbar"
+            app:layout_constraintTop_toTopOf="@id/my_toolbar"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/consInfo"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/bagroundputihawal"
@@ -42,11 +47,10 @@
             android:id="@+id/Profil"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp"
             android:background="@drawable/shape_corner_white"
             app:cardCornerRadius="20dp"
-            tools:ignore="MissingConstraints">
+            app:layout_constraintStart_toStartOf="@id/consInfo"
+            app:layout_constraintTop_toTopOf="@id/consInfo">
             <ImageButton
                 android:id="@+id/fotoUser"
                 android:layout_width="150dp"
