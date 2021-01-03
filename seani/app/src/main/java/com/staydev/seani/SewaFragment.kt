@@ -137,8 +137,7 @@ class SewaFragment : Fragment() {
                 },
                 Response.ErrorListener { error ->
                     Toast.makeText(
-                            activity,
-                            error.message,
+                            activity,"load",
                             Toast.LENGTH_SHORT
                     ).show()
                     Log.d("eror", error.message.toString())
